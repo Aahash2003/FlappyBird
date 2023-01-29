@@ -17,7 +17,8 @@ private void onEnable()
     InvokeRepeating(nameof(Spawn), spawnRate, spawnRate);
 }
 
-private void OnDisable(){
+private void OnDisable()
+{
     CancelInvoke(nameof(Spawn));
 }
 
