@@ -622,7 +622,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 602441856}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1635864709}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &602441856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -926,6 +938,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 564321d1aead2bd4da7bdf8d5b4dfd0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 511064401}
+  scoreText: {fileID: 264598515}
+  playButton: {fileID: 602441853}
+  gameOver: {fileID: 1632704435}
 --- !u!4 &1635864710
 Transform:
   m_ObjectHideFlags: 0
@@ -986,7 +1002,7 @@ MonoBehaviour:
   prefab: {fileID: 285564590750360717, guid: a9bd56b69a9df6147ae09a9180a12f20, type: 3}
   spawnRate: 1
   minHeight: -1
-  maxHeight: 1
+  maxHeight: 2
 --- !u!1 &1864424784
 GameObject:
   m_ObjectHideFlags: 0
